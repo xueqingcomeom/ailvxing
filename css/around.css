@@ -1,0 +1,178 @@
+#list>a:nth-child(2){
+	width:90px;
+	background:#64C972;
+    color:#fff;
+	text-align:center;
+}
+p.once>a,div.area_coun>span>a,div.ques_inter>span>a{
+   color:#000;
+}
+div.area_coun>span>a:hover,div.ques_inter>span>a:hover{
+   color:#7DC677;
+}
+p.once{
+  margin-top:27px;
+}
+p.once a:hover{
+  color:#7DC677;
+}
+div.world{
+   overflow:hidden;
+   margin:30px 0 20px;
+   width:760px;
+   height:404px;
+    position:relative;
+   border:1px solid #e3e3e3;
+}
+div.world>img{
+    position:absolute;
+    width:750px;
+    height:2430px;
+}
+div.grolbe{
+    position:absolute;
+    width:750px;
+    height:300px;
+	background:rgba(0,0,0,0.5);
+	top:404px;
+}
+
+ul.country_list>li{
+   float:left;
+   margin:8px 10px 3px;
+}
+ul.country_list>li>a,.ti{
+   font-size:15px;
+   color:#eee;
+}
+.ti{
+   font-size:17px;
+   margin:8px 10px 3px;
+}
+ul.country_list>li>a:hover{
+   color:#222;
+}
+div.nav_w{
+   width:350px;
+   height:1048px;
+   float:right;
+   margin-top:-425px;
+}
+div.area_coun{
+   width:760px;
+   height:430px;
+   border:1px solid #e3e3e3;
+   margin-bottom:20px
+}
+div.ques_inter{
+   width:760px;
+   height:555px;
+   border:1px solid #e3e3e3;
+}
+/*热门国家/地区*/
+div.area_couns{
+   width:676px;
+   height:350px;
+   margin:0 auto;
+   margin-top:13px;
+}
+div.area_coun>span{
+   display:block;
+   margin:18px 0px 0px 30px;
+}
+div.area_coun>div.area_couns>p>span{
+   float:right;
+   margin:8px 30px 0px 0px;
+   width:65px;
+}
+div.area_coun>div.area_couns>p{
+    display: inline-block;
+    width: 162px;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    line-height: 19px;
+    text-align: center;
+    vertical-align: middle;
+}
+div.area_coun>div.area_couns>p:hover{
+    cursor: pointer;
+}
+div.area_coun>div.area_couns>p:hover{
+  border:1px solid #64C972;
+}
+.area_couns>p>img.trans{
+    
+    transform:rotateY(360deg);
+    transition:all 1s linear;
+
+
+}
+/*签证问答*/
+div.ques_inter>span{
+   display:block;
+   margin:18px 0 10px 30px;
+}
+div.ques_inter>span>a,div.area_coun>span>a{
+   margin-left:10px;
+}
+div.ques_inters>div{
+   width:676px;
+   height:122px;
+    margin:8px auto 0px;
+}
+/*侧边栏1-1*/
+div.nav_w>div.why_w{
+   width:346px;
+   height:330px;
+   border:1px solid #e3e3e3;
+   background:url(../img/skin/0.jpg) no-repeat;
+   background-size:345px;
+}
+div.new_msg{
+   width:346px;
+   height:330px;
+   border:1px solid #e3e3e3;
+}
+.why_w>img{
+    width: 330px;
+    height: 321px;
+    margin-left: 10px;
+}
+.new_msg>img{
+    width: 321px;
+    height: 261px;
+	margin-top:40px;
+	margin-left: 10px;
+}
+div.phones{
+   width:346px;
+   height:380px;
+   border:1px solid #e3e3e3;
+   color:#666;
+}
+div.phones>p{
+   margin:15px 0px 15px 25px;
+   text-align:left;
+}
+
+.ques_inters>div>p,div.why_w>p{
+   margin:5px;
+   color:#666;
+   font-family:'Avenir Next','Lantinghei SC';
+   font-size:14px;
+}
+.ques_inters>div>p.ques_b>a{
+   color:#333;
+}
+.ques_inters>div>p.ques_b>a:hover{
+   cursor:pointer;
+   color:#64C972;
+}
+div.why_w>p{
+  margin:20px 15px 20px;
+}
+div.why_w>p.why_a~p{
+   margin:-15px 15px 35px;
+}
+

@@ -1,0 +1,26 @@
+div.main{
+	width:1200px;
+	margin:0 auto;
+	padding:0;
+}
+p,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{  
+	text-decoration:none;
+}
+body{
+   margin:0;
+}
+#head{
+	width:1200px;      
+	height:70px;
+}
+#foot{
+	clear:both;
+	width:1920px;
+	height:500px;
+	margin-left:-372px;
+}

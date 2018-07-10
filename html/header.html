@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     .pic_s>ul>li>img{
+	    width:20px;
+		height:20px;
+		display:inline-block;
+	    margin: 7px 10px -4px;
+	 }
+	 .pic_s{
+	    width:135px;
+		height:0;
+		background:#fff;
+		z-index:9999;
+		position:relative;
+		margin: -19px 130px 10px;
+		top:-18px;
+		overflow:hidden;
+		transition:all 0.3s linear;
+		font-size:14px;
+	 }
+
+	 .pic_s>ul{
+	    height:150px;
+		position:absolute;
+	 }
+	  .pic_s>ul>li{
+	    height:24px;
+		top:24px;
+	 }
+	 .pic_s>ul>li:hover a{
+	     cursor:pointer;
+		 color:#333;
+	 }
+	 .pic_s>ul>li>a{
+	    color:#333;
+
+	 }
+	 
+	 #btnLogin, #tbtnLogin{float:right;margin-top:10px;}
+  </style>
+ </head>
+ <body>
+  <div class="main">
+   <div id="head1">
+    <img src="img/skin/imgs/logo.png">
+	<div id="list">
+	  <a href="index.html" class="d1">首页</a>
+	  <a href="round.html">全球签证</a>
+	  <a href="text_list.html">旅游指南</a>
+	  <a href="inter.html">签证问答</a>
+	</div>
+	<div id="olgin">
+	   <a href="#"><img src="img/p/QQ.png" width="24" height="24" ></a>
+	   <a href="#"><img src="img/p/weix.png" width="25" height="25"></a>
+	   <a id="tbtnLogin" href="#">&nbsp;&nbsp; 注册</a>	   
+	    <a id="btnLogin" href="#">&nbsp;&nbsp;登录 </a> 
+	</div>
+	 <div class="loginwel">
+	    <span id="welcome">Welcome <b id="uname"></b><img class="top1" src="skin/top.png" height="10" width="19"/></span><table></table>
+	    <div class="pic_s">
+	      <ul>
+		   <li><img src="img/p/pic (1).png"><a href="">会员中心</a></li>
+		   <li><img src="img/p/pic.png" ><a href="">我的订单</a></li>
+		   <li><img src="img/p/pic (15).png"><a href="gou.html">购物车</a></li>
+		   <li><img src="img/p/pic (2).png" ><a href="">收藏夹</a></li>
+		   <li><img src="img/p/pic (4).png"><a href="">短信息</a></li>
+		   <li><img src="img/p/pic (10).png"><a class="outlogin">注销</a></li>
+		 </ul>
+	    </div>
+	 </div> 
+	 </div>
+	</div>
+
+ </body>
+</html>
+ 

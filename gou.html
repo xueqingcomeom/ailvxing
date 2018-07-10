@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/gou.css">
+ </head>
+ <body>
+<div class="main">
+<header id="header"></header>
+ <section id="section" >
+	<p class="once"><a href="index.html">首页</a><a href="round.html">&gt会员中心</a>&gt购物车</p>
+	<div class="start">
+	   <p class="clear">清空购物车</p>
+	   <div class="head">
+	      <table border="1px" cellspacing="0px" >
+		      <thead>
+			     <tr class="tr1" bgcolor="#e3e3e3">
+				    <th>名称</th>
+				    <th>价格</th>
+				    <th>数量</th>
+				    <th>小计</th>
+				    <th>操作</th>	
+				 </tr>
+			  </thead>
+			  <tbody id="tbody1">
+				 <!--<tr class="tr2">
+				    <td>
+					   <img src="${cart.dicpic}" alt="">
+					   <p>${cart.cont}</p>
+					   <p>${cart.youxiao}&nbsp;${cart.max}&nbsp;${cart.day}</p>
+					</td>
+				    <td>${cart.price}</td>
+				    <td>
+					    <a href="">-</a>
+						<input type="text" value=${cart.count} id="input">
+						<a href="">+</a>
+					</td>
+				    <td>${cart.count*cart.price}.toFixed(2)</td>
+				    <td><a href="">删除</a></td>	
+				 </tr>-->
+			  </tbody>
+			  <tfoot>
+				 <tr class="tr3" >
+				    <td colspan="5">合计：¥${}</td>
+				 </tr>
+			  </tfoot>
+		  </table>	
+	   </div>
+	   <p class="mgsa">填写订单信息</p>
+	   <table class="table1">
+	      <tbody>
+		     <tr>
+			   <td ><p class="msg">上门取件地址</p></td>
+			   <td>
+				<select name="" id="">
+					<option value="">选择预设的地址</option>
+				</select>
+			   </td>
+			 </tr>
+			  <tr>
+			   <td>真实姓名：</td>
+			   <td><input type="text" id="name"><span></span></td>
+			 </tr>
+			   <tr>
+			   <td>移动电话：</td>
+			   <td><input type="phone" id="phone"><span></span></td>
+			 </tr>
+			   <tr>
+			   <td>联系邮箱：</td>
+			   <td><input type="email" id="email"><span></span></td>
+			 </tr>
+			   <tr>
+			   <td>联系地址：</td>
+			   <td><input type="text" id="address"><span></span></td>
+			 </tr>
+			 <tr>
+			   <td>回邮地址：</td>
+			   <td class="click">
+					<input type="radio" class="check" value="1" name="all">相同
+					<input type="radio" name="all" value="0">不相同
+			   </td>
+			 </tr>
+			 <tr>
+			   <td class="top">备注信息：</td>
+			   <td>
+			     <textarea name="" id="text" cols="50" rows="5"></textarea></td>
+			 </tr>
+		  </tbody>
+	   </table>
+       <div class="div1">
+	     <p class="msg">选择配送方式</p>
+		 <p class="click1">
+		    <input type="radio" value="0" name="all1">自送自取<span>邮费:￥0.00元</span><i>上门地址请与客服人员确认</i><hr>
+			<input type="radio" value="0" name="all1">顺丰速运/同城<span>邮费:￥28.00元</span><i>往返快递费26元+2元回程保价费，如快递丢失赔1000元</i><hr>
+			<input type="radio" value="0" name="all1">顺丰速运/外埠<span>邮费:￥46.00元</span><i>　往返快递费44元+2元回程保价费，如快递丢失赔1000元</i>
+		 </p>
+	   </div>
+       <div class="div2">
+	      <p class="msg">选择支付方式</p><br>
+          <input type="radio" value="0" name="all2"><i>【支付宝】在线支付</i><br>
+		  <img src="img/skin/pic15.png" width="630" height="37" border="0" alt="">
+		  <input type="radio" value="0" name="all2"><i>【银行汇款】线下支付</i><br>
+		  <img src="img/skin/pic1.png" width="750" height="39" border="0" alt="">
+		  <input type="radio" value="0" name="all2"><i>【财付通】在线支付</i><br>
+		   <img src="img/skin/pic16.png" width="507" height="39"   border="0" alt="">
+		  <p class="last">
+		     优惠码：
+			 <input type="text"><i>优惠码可减免购物费用</i>
+		  </p>
+	   </div>
+		 <p class="btn1">应付金额：<span>${price}</span><span class="btn">提交订单</span></p>
+		 <div class="success">
+			 <p class="succ_a"><b>订单提交成功 </b><span class="close"></span></p>
+			 <i class="succ_b">✔您的订单已提交成功，我们将会在工作日内尽快安排工作人员处理您的订单</i>
+			 <ul>
+				 <li class="a">提示：</li>
+				 <li>我们的工作日时间为：工作人 早09:00-18:00</li>
+				 <li class="a">在群定您签证自恋准备齐全后，我们将会安排顺丰快递地上门取件</li>
+				 <li></li>
+				 <li class="a">爱旅行网北京公司</li>
+				 <li>收件人：爱旅行</li>
+				 <li>电话：400 000 8680</li>
+				 <li>地址：北京朝阳区东四环中路39号</li>
+				 <li></li>
+				 <li>自送自取到达奥旅行网路线请查看下面的链接：</li>
+				 <li>http://www.ailvxing.com/into/comtact.html</li>
+			 </ul>
+		 </div>
+	</div>
+
+ 	<footer id="footer"> </footer>
+   </div>
+	<script	src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/gou.js"></script>
+ </body>
+</html>

@@ -1,0 +1,186 @@
+﻿#list>a:nth-child(2){
+	width:90px;
+	background:#64C972; 
+	text-align:center;
+    color:#fff;
+}
+video{
+    position: relative;
+    width:806px;
+    height:400px;
+    top:-10px;
+}
+#section>div.a-a{
+   height:1715px;
+   border:1px solid #E3E3E3;
+   width:804px;
+   margin-top:10px;
+}
+
+#section>p{
+    margin:27px;	
+}
+#section p.once a:hover{
+  color:#7DC677;
+}
+#section>p>a{
+   color:#000;
+}
+#section>img{
+    margin-bottom:15px;
+}
+#section>.a-a>div>ul{
+      height:44px;
+	  position:absolute;
+}
+#section>.a-a>div>ul>li{
+   float:left;
+   height:44px;
+   width:100px;
+   line-height:44px;
+  
+   text-align:center;
+   cursor:pointer;
+}
+#pages>a{
+    color:#000;
+}
+#section>.a-a>div>ul>li>a{
+ color:#64C972;
+}
+#section>.a-a>div>.top_a{
+   height:42px;
+   width:100px;
+   position:absolute;
+   top:0px;
+   left:0px;
+	border:2px solid #64C972;
+   border-bottom:2px solid #fff;
+   transition:left 0.5s linear;
+   
+}
+div.area_price>div{
+  width:800px;
+  height:170px;
+   border-bottom:1px solid #e3e3e3;
+}
+/*<div class="a_b">
+  <input type="text" placeholder="请输入您要搜索的内容">
+  <img src="img/p/s-01 (3).png">
+  </div>*/
+
+.a_b{
+   width:375px;
+   height:39px;
+   border:1px solid #E3E3E3;
+   margin:17px 0px 15px 400px;
+   text-align:center;
+}
+.a_b>input{
+   width:313px;
+   height:35px;
+   float:left;
+   border:none;
+   margin: 2px 0 0 5px;
+   outline:none;
+   font-size:15px;
+ }
+.a_b>img{
+    width: 57px;
+    height: 41px;
+    float: left;
+    margin-top: -1px;
+}
+.area_price .area_list{
+   font-size:20px;
+   margin:5px 0 0 15px;
+}
+
+.area_price{
+    clear:both;
+}
+.area_box{
+   margin-top:5px;
+}
+.area_box td{
+   text-align:center;
+   width:122px;
+}
+.area_box td:not(:first-child){
+   border-left:1px solid #E3E3E3;
+}
+.area_cont{
+   display:inline-block;
+   width:400px;
+   height:35px;
+   margin:10px 80px 0 15px;
+}
+.area_prices{
+  display:inline-block;
+
+  height:15px;
+   font-size:24px;
+   font-weight:bold;
+   color:#4CAFE9;
+   margin-right:26px;
+   margin-top:35px;
+}
+.area_prices:hover{
+   color:#4CAFE9;
+}
+.area_look{
+   display:inline-block;
+   float:right;
+   width:120px;
+   height:35px;
+   line-height:35px;
+   text-align:center;
+   border-radius:3px;
+   color:#fff;
+   margin-right:20px;
+   margin-top:35px;
+   background:#64C972;
+}
+.area_look:hover{
+   color:#fff;
+   cursor:pointer;
+}
+#pages{
+   text-align:right;
+   margin-left:388px;
+    top: 2221px;
+   position:absolute;
+}
+#pages>a{
+   display:inline-block;
+   padding: 5px 10px;
+   margin:5px 3px;;
+   border-radius:3px;
+   border:1px solid #e3e3e3;
+}
+#pages a.current{
+    border-color:#64C972;
+    background:#64C972;
+    color:#fff;
+}
+#pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}
+.left{float: left;
+    height: 2148px;}
+.right{float:right;}
+#footer{clear:both;}
+.right>img{
+        width: 344px;
+    height: 930px;
+	}
+img.height{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    right:539px;
+    top:800px;
+    opacity:0.7;
+}

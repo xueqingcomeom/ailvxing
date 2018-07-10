@@ -1,0 +1,146 @@
+﻿
+#footer-nav{
+   background-color:#64C972;
+   font-size:14px;
+}
+/*绿色框框上部分内容*/
+	#nav-top{
+	  width:1180px;
+	  height:270px;
+	  margin:30px auto 0;
+	  color:#fff;
+	  padding:0 10px;
+	  display:flex;
+	  flex-wrap:wrap;
+	  justify-content:space-between;			
+	}
+	#nav-top div.content{
+	  display:inline-block;
+	  width:270px;
+	  height:130px;
+	  
+	}
+	#nav-top p.text-small{
+	  display:block;
+	  width:270px;
+	  margin-top:18px;
+	  line-height:2;
+	}
+	.text-big{
+	   font-size:18px;
+	}
+	#nav-top div.serve{
+	  display:inline-block;
+	  width:200px;
+	  height:130px;
+	}
+	#nav-top div.serve li:nth-child(1),#nav-top div.relation li:nth-child(1){
+		margin-bottom:15px;
+		font-size:18px;	
+	}
+	#nav-top div.serve a{
+	   line-height:2;
+	   margin-right:12px;
+
+	}
+	a{
+	  color:#fff;
+	}
+	#nav-top div.serve a:hover,#nav-bottom li a:hover{
+	   text-decoration:underline;
+	}
+	#nav-top div.relation{
+	  display:inline-block;
+	  width:300px;
+	  height:130px;
+	}
+
+	#nav-top div.relation li:not(first-child){
+	   margin-bottom:10px;
+	}
+	#nav-top div.preview{
+	  display:inline-block;
+	  width:110px;
+	  height:130px;
+	  margin-top:40px;
+	  margin-right:-5px;
+	}
+/*绿色框框下部分内容*/
+	#nav-bottom{
+	   width:1180px;
+	   height:60px;
+	   border-top:1px solid #81D98E;
+	   margin-top:-10px;
+	}
+	#nav-bottom li{
+	   float:left;
+	   margin:30px 3px 0;
+	}
+/*版权信息*/
+	#footer-main{
+	   display:flex;
+	   justify-content:space-between;
+	   margin:25px auto 0; 
+	   color:#999;
+	   font-size:14px;
+	}
+	#footer-main a{
+	   color:#000;
+	}
+/*图链接内容*/
+	#pic{
+	   width:450px;
+	   height:60px;
+	   float:right;
+	}
+	.ico{
+	   width:110px;
+	   height:40px;
+	   background:url(../img/skin/imgs/authentication.png) no-repeat 0 -45px;
+	   float:left;
+	}
+	.ico:hover{
+	   background-position:0 0;
+	}
+	.ico1{
+	   background-position:-113px -45px;
+	}
+	.ico1:hover{
+	   background-position:-113px 0;
+	}
+	.ico2{
+	   background-position:-226px -45px;
+	}
+	.ico2:hover{
+	   background-position:-226px 0;
+	}
+	.ico3{
+	   background-position:-338px -45px;
+	}
+	.ico3:hover{
+	   background-position:-338px 0;
+	}
+/*底部友情链接*/
+	#footer-a{
+	   clear:both;
+		height:50px;
+	   border-top:1px solid #D9D9D9;
+	   margin:0 auto;
+	   padding-top:20px;
+	   font-size:14px;
+	}
+	#footer-a ul{
+	   display:flex;
+	}
+	#footer-a>ul>li{
+	   margin-right:10px;
+	   list-style-type:none;
+	}
+	#footer-a>ul>li>a{
+	   text-decoration:none;
+	   color:#999;
+	}
+	#footer-a>ul>li>a:hover{
+	   text-decoration:underline;
+	   color:#64C972;
+	}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/content.css">
+ </head>
+ <body>
+   <div class="main">
+    <header id="header"></header>
+      <section class="section">
+     <!--导航  -->
+		  <div class=""></div>
+		   <p class="tou"><a href="index.html">首页</a>&nbsp;&gt;&nbsp;<a href="text_list.html">旅游指南</a>&nbsp;&gt;&nbsp;<a href="contentid${text.t_id}.html">${text.title}</a></p>
+     <!-- 网页左侧内容 -->
+			 <div class="left">
+			   <div class="left_l">
+						<h3>${text.title}</h3>
+						<p class="left_1">时间：${text.time} 来源：${text.from} 作者：${text.writer}</p>
+						<div class="left_a">
+						<!--	<p class="left_2">${text.subtitle}</p>
+							<img src="${text.pics}" alt="">
+							<p class="left_3">${text.content.slice(0,20)}</p>
+							<img src="${text.pic_a}" alt="">
+							<p class="left_4">${text.content.slice(15)}</p>
+							<img src="${text.pic_b}" alt="">
+							<img src="${text.pic_c}" alt="">-->
+						</div>
+				 </div>
+          <!--相关信息	 -->
+					<div class="left_b">
+					   <p class="left_5">相关信息</p>
+					   <ul class="left_c">
+						   <li><span></span>${p.title}</li>
+					 	</ul>
+					</div>
+          <!-- 评论内容 -->
+					<div class="left_d">
+						<tbale></tbale>
+					  <p class="left_d1">网友评论</p>
+						<img src="skin/ailvxing16/imgs/nopic.jpg" height="50" width="50">
+						<textarea name="pinglun" id="ping" cols="70" rows="5"></textarea>
+						<a href="#">发表评论</a>
+						<p>网友评论仅供网友表达个人看法，并不表明旅行网同意其观点或证实</p>
+					</div>
+			 </div>
+      <!--右侧内容 -->
+			 <div class="right">
+			     <img src="skin/alx801.png" alt="" class="right_a"> 
+          <!--  旅游指南-->
+			     <div class="right_b">
+					    <p>旅游指南</p>
+							<ul>
+							   <li><span></span><a href="">${title}</a></li>
+							</ul>
+					 </div>
+			     <div class="right_c">
+					    <p>最新信息</p>
+							<ul>
+							   <li><span></span><a href="">${title}</a></li>
+							</ul>
+					 </div><div class="right_d">
+					    <p>阅读排行</p>
+							<ul>
+							   <li><span></span><a href="">${title}</a></li>
+							</ul>
+					 </div>
+			 </div>
+		  <img class="height" src="skin/ailvxing16/imgs/totop.jpg" height="46" width="46"/>
+	  </section>
+		<footer id="footer"> </footer>
+   		</div> 
+	<script	src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>	
+	<script src="js/content_id.js"></script>
+ </body>
+</html>

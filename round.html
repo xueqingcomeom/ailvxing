@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/around.css">
+ </head>
+ <body>
+   <div class="main">
+    <header id="header"></header>
+     <p  class="once"><a href="index.html">首页</a> &gt <a href="round.html">全球签证</a></p>
+   	 <div class="world">
+		 <img src="skin/world_map.png" border="0" alt="">
+		 <div class="grolbe">
+		   <p class="ti"></p>
+			<ul class="country_list">
+			  <li><a href="price.html">${map.cont.split("(")[0]}</a></li>
+			</ul> 
+		 </div>
+	</div>
+	 <!--侧边栏-->
+	 <div class="nav_w">
+	    <div class="why_w">
+			  <img src="img/skin/pic9.png" >  
+			</div>
+		<div class="new_msg">
+		    <img src="img/skin/pic18.png" >  
+		</div>
+		<div class="phones">
+		   <p class="phones_a">爱旅行客服电话</p>
+		   <p class="phones_b">工作日早9:00-晚18:00</p>
+		   <p class="phones_c">400 000 8680</p>
+		   <p class="phones_d">未开通400地区可拨打</p>
+		   <p class="phones_e">010-8571 0587</p>
+		   <p class="phones_f">爱旅行客服电话</p>
+		   <p class="phones_g"><img src="img/skin/imgs/ailvxing_weixin.png" width="100" height="100"></p>
+		</div>
+	 </div>
+     <!--热门国家/地区-->
+	  <div class="area_coun">
+	     <span>热门国家/地区 <a href="price_list.html">[全部]</a></span>
+       <div class="area_couns">
+		 <!-- <p><img src=" ${dicPic}"><span>${country}</span></p>-->
+		   </div>
+	  </div>
+	 <!--签证问答--> 
+	   <div class="ques_inter">
+	      <span>签证问答<a href="inter.html">[全部]</a></span>
+				<div class="ques_inters">
+				  <div>
+				   <p class="ques_a">${用户名}-${日期}</p>
+					 <p class="ques_b">${问题}</p>
+					 <p class="ques_c">${回答}</p>
+					</div>
+				</div>
+	   </div>
+     <footer id="footer"></footer>	
+   </div>
+	 <script	src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui.js"></script>
+   <script src="js/ajax.js"></script>
+   <script src="js/header.js"></script>
+   <script src="js/global_area.js"></script>
+   <script src="js/footer.js"></script>
+ </body>
+</html>

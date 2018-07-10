@@ -1,0 +1,95 @@
+
+#head1{
+   margin:0 auto;
+   height:64px;
+   border-bottom:2px solid #E6E6E6;
+}
+#list a{
+	color:#000;
+	text-decoration:none;
+	display:inline-block;
+	height:65px;
+	line-height:65px;
+}
+
+#head1>img,#list,#olgin{
+	float:left;
+	margin-right:85px;
+}
+#head1>img{
+    margin-top:14px;
+}
+#list{
+    margin-right:240px;
+}
+#list a{
+    margin:0 30px;
+}
+#list a:first-child>img{
+ margin-right: 15px;
+}
+#olgin{
+    margin:0;
+    margin-left:31px;
+    margin-top:25px;
+}
+#olgin a{
+    margin:0;
+	color:#000;
+}
+#olgin a img{
+	margin:0 3px;
+	font-size:14px;				
+}
+
+a:hover{
+    color:green;
+}
+#welcomeList{
+   float:right;
+   margin-right:-34px;
+   margin-top:23px;
+   display:none;
+   cursor:pointer;
+}
+#welcomeList a{
+   color:#000;
+}
+#welcomeList li{
+  float:left;
+  margin:0;
+  margin-top:-3px;
+  margin-right:20px; 
+}
+#msg{
+  background:lightYellow; 
+  color:red; 
+  display:none
+}
+div.loginwel{
+  position:relative;
+  top:20px;
+  width:210px;
+  right:-930px;
+}
+div.loginwel .top1{
+    margin-left: 10px;
+    transition:all .3s linear;
+
+}
+div.loginwel:hover .top1{
+    transform:rotateZ(180deg);
+}
+#welcome{
+    right:-24px;
+	cursor:pointer;
+	position:absolute;
+}
+
+input[name=upwd]{
+    margin-top: 15px;
+    margin-left: 1px;
+}
+input[name=uname]{
+    margin-top: 15px;
+}

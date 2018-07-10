@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .once{
+            width:300px;
+            height:50px;
+            line-height:70px;
+            margin-left:80px;
+            margin-bottom:10px;
+            background:url(img/skin/imgs/logo.png) no-repeat;
+            background-size:130px 50px;
+            position: absolute;
+            top:15px;
+        }
+        .once>span{
+            display:inline-block;
+            font-size:22px;
+            color:#666;
+            margin:-10px 0px 0px 150px;
+        }
+        .zhuce{
+            width:100%;
+            height:780px;
+            position: absolute;
+            /*background:url(skin/1212.jpg) no-repeat;*/
+            background-size:100%;
+        }
+        #form1{
+            width:510px;
+            height:390px;
+            background:rgba(255,255,255,0.8);
+            margin: 254px auto;
+            left: 630px;
+            position:absolute;
+        }
+        #form1>p:not(:first-child){
+            margin-left:80px;
+        }
+        .pcp{
+            width:510px;
+            height:45px;
+            background:rgba(67,180,19,0.8);
+            color:#fff;
+            line-height:45px;
+            text-align:center;
+            margin:0px 0 45px;
+            font-size:22px;
+        }
+        #form1 input{
+            width:200px;
+            height:25px;
+            font-size:16px;
+        }
+        label>span{
+            display:none;
+        }
+        #form1 p.sub{
+            margin:25px 0px 0px 160px;
+
+        }
+        #form1 p.sub>input{
+            background:rgba(67,180,19,0.8);
+            color:#fff;
+            border:none;
+            height:30px;
+        }
+        #yzm>img{
+            display:inline-block;;
+            margin-bottom:-10px;
+        }
+        #yzm>input.code{
+            width:92px;
+            margin-left:3px;
+            margin-bottom:10px;
+        }
+        .lianjie{
+            display:inline-block;;
+            margin: 51px 80px 0px 20px;
+            color:#adadad;
+            text-decoration:none;
+        }
+        #form1>.qq,#form1>.weixin{
+            display:inline-block;
+            width:145px;
+            height:50px;
+            border:1px solid #43B413;
+            text-align:right;
+            line-height: 50px;
+            padding-right: 10px;
+            box-sizing: border-box;
+            margin:0;
+        }
+
+        #form1>p.qq{
+            margin: 31px -15px 0px 20px;
+            color:#4CAFE9;
+            background: url(img/p/QQ.png) no-repeat;
+            background-size:35px 35px;
+            background-position: 5px;
+
+        }
+        #form1>p.weixin{
+            margin: 31px 0px 0px 20px;
+            color:#47DB4E;
+            background: url(img/p/weix.png) no-repeat;
+            background-size:35px 35px;
+            background-position: 5px;
+
+        }
+        #v3{
+            top: -47px;
+            left: 0px;
+            width: 100%;
+            height: 1101px;
+            position: absolute;
+            z-index: -999;
+        }
+    </style>
+</head>
+<body>
+<video src="skin/2.mp4" loop autoplay  muted id="v3"></video>
+<p class="once"><span>欢迎登录</span></p>
+<div class="zhuce">
+
+    <form id="form1">
+        <p class="pcp">登&nbsp;录</p>
+        <p>用&nbsp;户&nbsp;名&nbsp;:&nbsp;
+                <input type="text" id="uname" name="uname"><span></span>
+        </p>
+        <p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 码&nbsp;:
+                <input id="upwd" name="upwd" type="password"><span></span>
+        </p>
+        <p id="yzm">验&nbsp;证&nbsp;码&nbsp;:&nbsp;
+            <img src="data/user/00_yzm.php" title="看不清换一张" class="yzm_pic">
+            <input type="text" class="code" class="form-control" placeholder="验证码" name="cont">
+        </p>
+        <p class="sub">
+            <input type="submit" value="登录" >
+        </p>
+        <a  class="lianjie" href="zhuce.html"><img src="img/p/denglu1.png" height="20" width="20"/>去注册</a>
+        <p class="qq">QQ账号登录</p>
+        <p class="weixin">微信账号登录</p>
+    </form>
+
+</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+    $(()=>{
+        var $denglu=$(".sub>input");
+        $denglu.click(e=>{
+            e.preventDefault();
+            var $uname=$("#uname").val();
+            var $upwd=$("#upwd").val();
+            var $uyzm=$(".code").val();
+            var ureg=/^[a-z0-9]{6,9}$/i;
+            var preg=/^[0-9]{3,8}$/;
+            var zreg=/^[0-9a-z]{4}$/i;
+            if(!ureg.test($uname)){
+                alert("用户名格式不正确");
+                return;  //停止成语运行
+            }
+            if(!preg.test($upwd)){
+                alert("密码格式不正确");
+                return; //停止程序运行
+            }
+            if(!zreg.test($uyzm)){
+                alert("验证码格式不正确,请重新输入");
+                 return;
+             }
+            $.ajax({
+                type:"post",
+                url:"data/user/login.php",
+                data:{uname:$uname,upwd:$upwd,yzm:$uyzm}
+            }).then(data=>{
+                if(data.ok==1){
+                    var back=location.search.slice(6);
+                    location=back;
+                }else{
+                    alert(data.msg);
+                }
+            })
+        })
+
+        $(".yzm_pic").click(function(){
+            this.src="data/user/00_yzm.php";
+        });
+    })
+
+
+</script>
+</body>
+</html>

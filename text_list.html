@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/text_list.css">
+ </head>
+ <body>
+   <div class="main">
+     <header id="header"></header>
+		 <section id="section">
+		   <p  class="once"><a href="index.html">首页</a> &gt <a href="text_list.html">旅游指南</a></p>
+        <!--list  -->
+				<div class="list_s">
+   <!-- <div class="list">
+	<h3 class="list_a">${p.title}</h3>
+	<img class="list_b" src="${p.pics}" width="160" height="90">
+	<span class="list_c">${p.content.slice(0,40)+"..."}
+	   <a href="t_id=${p.t_id}.html">查看全文</a>
+	</span>SELECT question,fill,title,datatime,uname,pic FROM `inter` inter join alx_user WHERE user_id=uid order by iid=3
+	<span class="list_d">
+	      发表与:${p.froms}${year+"-"+month+"-"+data}
+	</span>					 
+ </div>-->
+				</div>
+        <!-- nav -->
+				<div class="nav_hang">
+				<div class="nav">&nbsp;
+					   <p>最新信息</p>
+					    <ul style="type:disc">
+							 <!--<li><a href="t_id=${p.t_id}.html">${}</a></li>-->
+							</ul>
+					 </div>
+					 <div class="hang">
+					   <p>阅读排行</p>
+					   <ul style="type:disc">
+						  <!--<li><a href="t_id=${p.t_id}.html">${}</a></li>-->
+						 </ul>
+					 </div>
+				</div>
+		 </section>
+     <footer id="footer"></footer>
+	 </div>
+	<script	src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui.js"></script>
+   <script src="js/ajax.js"></script>
+   <script src="js/header.js"></script>
+   <script src="js/text_list.js"></script>
+   <script src="js/footer.js"></script>
+ </body>
+</html>

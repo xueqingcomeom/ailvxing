@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/inter.css">
+ </head>
+ <body>
+   <div class="main">
+      <header id="header"></header>
+	  <section id="section">
+	  <!--导航-->
+	     <p class="once"><a href="index.html">首页</a> &gt <a href="inter.html" >签证问答</a></p>
+          <!--查询-->
+		 <div class="global">
+			<div class="one">
+		<!--	  <table>
+				  <tr>
+					  <td rowspan="3">${user.pic}</td>
+						<td><a href="#">${user.question}</a></td>
+					</tr>
+					<tr>
+					  <td>${user.uname} ${user.datatime}</td>
+					</tr>
+					<tr>
+					  <td>${user.title} <span>回复</span></td>
+					</tr>
+				</table> -->
+			</div>
+			 <div id="pages">
+             <!--<a href="javascript:;" class="previous">上一页</a>
+             <a href="javascript:;" class="current">1</a>
+             <a href="javascript:;">2</a>
+             <a href="javascript:;" class="next">下一页</a>-->
+		  </div>
+		  </div>
+		 <!--nav-->
+           <div class="question">
+		      <p class="quest">我要提问</p>
+                 <!--活跃用户-->
+			  <div class="quest_a">
+			     <p class="a_a">活跃用户</p>
+				 <div class="quest_a_a">
+				<!--<table>
+				    <tr>
+					   <td rowspan="2"><img src="${user.pic}"></td>
+					   <td>${user.uname}</td>
+					</tr>
+					<tr>
+					   <td>问题 0 回复 35 评论 66</td>
+					</tr>
+				 </table>-->
+				 </div>
+			  </div>
+			  <!--最新回复-->
+			  <div class="quest_b">
+			      <p class="a_a">最新回复</p>
+				  <img src="img/skin/11.png" alt=""/>
+			  </div>
+			  <!--最新评论-->
+			  <div class="quest_c">
+			     <p class="a_a">最新评论</p>
+				  <img src="img/skin/22.png" />
+			  </div>
+			   <!--推荐信息-->
+			  <div class="quest_d">
+			     <p class="a_a">推荐信息</p>
+				  <img src="img/skin/33.png" />
+			  </div>	
+
+		   </div>
+		  <div class="quest_q">
+			  <h3 class="tiwen">签证帮问答提问</h3>
+				<span class="cha">x</span>
+				<p>
+				   <p class="text_1">写下你的问题(不能为空)</p>
+					 <textarea name="top" class="input_1" rows="3" ></textarea>
+				</p>
+				<p>
+				  <p class="text_1">问题补充(可选)</p>
+					<textarea name="bottom" class="input_2" rows="6"></textarea>
+				</p>
+				<p>
+				  <p class="text_2">至少要添加一个标签</p>
+					<input type="text" placeholder="添加标签"  class="input_3">
+				</p>
+				<p class="btns">
+				 <a href="#"  class="btn_1">我要提问</a>
+				 <a href="#"  class="btn_2">取消</a>
+				</p>
+		  </div>
+	  </section>
+	  <footer id="footer"></footer>
+   </div>
+	 <script	src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>	
+	<script src="js/inter.js"> </script>
+ </body>
+</html>
